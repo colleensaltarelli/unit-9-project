@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Monk's Cafe</title>
+   <link rel="stylesheet" href="css/foundation.css" />
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   
+
+<div id="heading">
+  <div class="heading-content">
+     <h1>Monk's Cafe</h1>
+     <h2>"The Coffee Shop"</h2>
+  </div>
+</div>
+
+
+
+   <section id="reservations">
+   	 <h3>Reservations</h3>
+     <div class="grid-x">
+   	 <div id="res-left-side" class="small-6 cell">
+   	 	<h4>Make a Reservation</h4>
+   	 	<form>
+   	 		<input type="text" name="name" placeholder="Name">
+   	 		<input type="text" name="Day" placeholder="Day">
+   	 		<button class="button" type="submit">Confirm</button>
+   	 	</form>
+   	 </div>
+   	 <div id="res-right-side" class="small-6 cell">
+   	 	<h4>Existing Reservations</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+
+          </tr>
+        </tbody>
+      </table>
+   	 </div>
+    </div>
+   </section>
+
+   <section id="dine">
+     <h3>Come Dine with Us</h3>
+      <div class="grid-x">
+         <div class="small-12 medium-6 medium-offset-3 cell">
+         <div id="map"></div> 	
+       </div>
+     </div>
+   </section>
+
+   <section id="reviews">
+   	 <h3>Customer Reviews</h3> 	
+     <div class="grid-x">
+   	 <div id="review-left-side" class="small-6 medium-4 medium-offset-2 cell">
+   	 	<img src="jerry.jpg">
+   	 </div>
+   	 <div id="review-right-side" class="small-6 medium-4 cell">
+   	 	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+   	 	<span>Name Name</span>
+   	 </div>
+    </div>
+   </section>
+
+   <footer id="footer">
+   	
+   </footer>
+     <script src="main.js" type="text/javascript"></script>
+   <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSrhrrBIv55F8QLCZK4ao3Grk80CgP2pU&callback=initMap"
+  type="text/javascript"></script>
+</body>
+</html>
+ 

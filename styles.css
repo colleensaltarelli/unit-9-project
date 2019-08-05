@@ -1,0 +1,91 @@
+#heading {
+  background: url('coffee.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+  visibility: inherit;
+  z-index: 20;
+  align-items: center;
+}
+
+#heading .heading-content h1{
+	padding-top: 200px;
+	color: white;
+	font-weight: bold;
+	font-size: 80px;
+	text-align: center;
+}
+
+#heading .heading-content h2{
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+section {
+	padding: 60px 30px;
+}
+
+#reservations {
+	margin: auto;
+	border: none;
+	padding: 60px 0px 0px 0px;
+}
+
+#reservations table{
+	margin: auto;
+	border: none;
+	padding: 60px 0px;
+}
+
+#reservations th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+
+#reservations h3{
+	text-align: center;
+	font-size: 24px;
+	margin:  0px  0px 40px 0px;
+}
+
+#reservations h4{
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+}
+
+#reservations form {
+	padding: 60px;
+}
+
+
+#dine h3{
+	text-align: center;
+	font-size: 24px;
+	margin:  0px  0px 40px 0px;
+}
+
+#dine #map {
+	width: 600px;
+	height: 300px;
+	margin: auto;
+}
+
+#reviews h3{
+	text-align: center;
+	font-size: 24px;
+	margin:  0px  0px 40px 0px;
+}
+
+#review-right-side {
+	padding: 0px 0px 0px 30px;
+}
+
+
+footer {
+	height: 70px;
+	background-color: grey;
+}
