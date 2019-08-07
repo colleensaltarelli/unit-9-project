@@ -23,9 +23,9 @@
      <div class="grid-x">
    	 <div id="res-left-side" class="small-6 cell">
    	 	<h4>Make a Reservation</h4>
-   	 	<form>
-   	 		<input type="text" name="name" placeholder="Name">
-   	 		<input type="text" name="Day" placeholder="Day">
+   	 	<form id="res-form">
+   	 		<input id="res-name" type="text" name="name" placeholder="Name">
+   	 		<input id="res-day" type="text" name="Day" placeholder="Day">
    	 		<button class="button" type="submit">Confirm</button>
    	 	</form>
    	 </div>
@@ -36,26 +36,48 @@
           <tr>
             <th>Name</th>
             <th>Day</th>
+             <th>Cancel</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Content Goes Here</td>
-            <td>Content Goes Here</td>
-          </tr>
+        <tbody class="all-reservations">
 
-          </tr>
         </tbody>
       </table>
    	 </div>
     </div>
    </section>
 
+
    <section id="dine">
      <h3>Come Dine with Us</h3>
       <div class="grid-x">
-         <div class="small-12 medium-6 medium-offset-3 cell">
+         <div class="small-12 medium-6 medium-offset-1 cell">
          <div id="map"></div> 	
+       </div>
+         <div class="small-12 medium-3 cell">
+          <h4>Hours</h4>
+        <table>
+        <tbody class="hours">
+          <tr>
+            <td>Monday-Thursday</td>
+            <td>6:00am</td>
+            <td>10:00pm</td>
+          </tr>
+
+          </tr>
+                    <tr>
+            <td>Friday & Saturday</td>
+            <td>7:00am</td>
+            <td>11:00pm</td>
+          </tr>
+                    <tr>
+            <td>Sunday</td>
+            <td>8:00am</td>
+            <td>9:00pm</td>
+          </tr>
+        </tbody>
+      </table>
+         </div>
        </div>
      </div>
    </section>
@@ -73,9 +95,29 @@
     </div>
    </section>
 
-   <footer id="footer">
+<section id="instafeed">
+  <h3>Instagram Feed</h3>
+  <div id="rudr_instafeed"></div>
+</section>
+
    	
    </footer>
+
+
+           <!-- Handlebars Template -->
+          <script id="res-template" type="text/x-handlebars-template">
+            <tr data-id="{{resId}}">
+              <td>{{name}}</td>
+              <td>{{day}}</td>
+              <td><a id="res-delete">X</a></td>
+            </tr>
+          </script>
+
+     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script src="js/handelbars.js"></script>
+    <script src="js/jquery.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="main.js" type="text/javascript"></script>
    <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
